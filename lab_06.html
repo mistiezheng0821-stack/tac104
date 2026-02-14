@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery | TAC 104</title>
+    <link rel="stylesheet" href="main.css"> <!-- links the styling to main.css -->
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        #gallery {
+            display: flex;
+            margin: auto;
+            width: 1000px;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        img {
+            height: 400px;
+            width: auto;
+            border: 5px solid white;
+            margin: 10px;
+            opacity: 0.7;
+        }
+
+        img:hover {
+            border: 5px solid red;
+            opacity: 1;
+        }
+
+        img+p {
+            text-align: center;
+            font-size: 18px;
+            visibility: hidden;
+        }
+
+        img:hover+p {
+            visibility: visible;
+        }
+    </style>
+
+
+<body>
+    <h1>Interactive Photo Gallery</h1>
+    <h1>Favorite Animes</h1>
+    <div id="gallery">
+        <!-- image1 -->
+        <div class="image">
+            <img src="img/death_note.webp" alt="Death Note">
+            <p>Death Note</p>
+        </div>
+
+        <!-- image2 -->
+        <div class="image">
+            <img src="img/promised_neverland.jpg" alt="The Promised Neverland">
+            <p>The Promised Neverland</p>
+        </div>
+
+        <!-- image3 -->
+        <div class="image">
+            <img src="img/noragami.jpg" alt="noragami">
+            <p>Noragami</p>
+        </div>
+
+        <!-- image4 -->
+        <div class="image">
+            <img src="img/soul_treater.jpg" alt="Soul Eater">
+            <p>Soul Eater</p>
+        </div>
+
+        <!-- image5 -->
+        <div class="image">
+            <img src="img/ao_haru.jpg" alt="AO Haru Ride">
+            <p>AO Haru Ride</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("h2").css("font-style", "italic");
+
+            $("#gallery img").click(function () {
+                $("#gallery img").css("border", "5px solid white");
+                $("#gallery img").css("opacity", "0.7");
+                $(this).css("border", "5px solid red");
+                $(this).css("opacity", "1");
+            });
+        });
+    </script> ̰
+</body>
