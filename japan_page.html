@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- INFO ABOUT WEBSITE -->
+
+<head>
+    <meta charset="UTF-8"> <!-- makes sure all characters display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="xxxx">
+    <meta name="description" content="A blog of my one-week Japan trip
+    where I competed at an internal dance finals. This page shows an overview
+    of how I spent each of my seven days, including locations I went to and activities
+    I did. I also showcase some of my competition photos, and ended off with a reflection
+    with what I loved most about my trip.">
+
+    <title>Mistie's Travel Blog | Japan</title>
+
+    <link rel="stylesheet" href="main.css"> <!-- links the styling to main.css -->
+    <style>
+        .location-heading {
+            background-image: url(img/banner_japan2.jpg);
+            background-position: center 70%;
+            /* color: #d5e3f0; */
+            color: #c1d5f0
+                /* move down 50% */
+
+        }
+
+        #country {
+            text-shadow: 3px 3px 3px black;
+        }
+
+        /* 7 DAY ITINERARY */
+        #japan-itinerary {
+            /* entire itinerary section */
+            text-align: center;
+            background-color: #ebb2d5;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        #japan-itinerary h2 {
+            margin: 0px;
+            padding: 20px;
+            font-size: 50px;
+            color: #f3e4f5;
+            text-shadow: 2px 2px 2px black;
+
+        }
+
+        #japan-itinerary-body {
+            /* entire itinererary section w/o heading */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 1450px;
+            /* border: white solid 10px; */
+            margin: auto;
+            color: black;
+        }
+
+        /* .itinerary-column {
+            /* left and right column 
+            border: white 10px solid;
+            width: 700px;
+        }
+ */
+        .japan-days {
+            /* each sections image + text */
+            display: flex;
+            /* border: peru 10px solid; */
+            width: 650px;
+        }
+
+        #japan-itinerary .japan-days img {
+            /* each secton's IMAGE only */
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            border: #f3e4f5 solid 5px;
+            margin: 20px;
+        }
+
+        .japan-days-text {
+            /* each section's TEXT PORTION only */
+            /* border: 5px blue solid; */
+            width: 300px;
+            margin: 20px;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .japan-days-text h3 {
+            /* the "day x" headings */
+            font-size: 30px;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+
+
+        }
+
+        /* FOR THE COMPETITION CAPTURES GALLERY */
+        #competition-gallery {
+            background-color: #957dbb;
+        }
+
+        #competition-gallery h2 {
+            margin: 0px;
+            padding: 40px;
+            margin: 0px;
+            font-size: 50px;
+            text-align: center;
+            color: #fbdadd;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .comp-photos {
+            display: flex;
+        }
+
+        .comp-photos img {
+            /* margin: 5px; */
+            border: 5px #fbdadd solid;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- DROP DOWN BAR -->
+    <div id="section-1-heading">
+        <ul id="menu">
+            <li><a href="final_project_homepage_draft.html">Home</a></li>
+            <li><a href="final_project_homepage_draft.html#section-3">About</a></li>
+            <li>
+                <a>Travel</a>
+                <ul id="sub-menu">
+                    <li><a href="europe_page.html">Europe</a></li>
+                    <li><a href="china_page.html">China</a></li>
+                    <li><a href="japan_page.html">Japan</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- HEADING -->
+    <div class="location-heading">
+        <h1 id="country">Japan</h1>
+        <p><strong>Summer 2023</strong></p>
+        <p><strong>From June 21, 2024 to August 23, 2025</strong></p>
+    </div>
+
+    <!-- ABOUT THIS TRIP -->
+    <div id="about-trip">
+        <div class="about-trip-img">
+            <img src="img/japan_cover.jpeg" alt="Japan Cover">
+        </div>
+        <div class="about-trip-text">
+            <h2>About This Trip</h2>
+            <ul>
+                <li><strong>When:</strong> July 25 to August 1, 2023</li>
+                <li><strong>Who:</strong> With my dance team and family </li>
+                <li><strong>Why:</strong> For a dance competition </li>
+                <li><strong>What:</strong> Competed at the Olympics stadium,
+                    explored Tokyo and Shinjuku with friends, spent time
+                    with family </li>
+                <li><strong>Where:</strong> Tokyo</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 7-DAY ITINERARY -->
+    <div id="japan-itinerary">
+        <h2>7-Day Itinerary</h2>
+
+        <div id="japan-itinerary-body">
+
+            <!-- <div class="itinerary-column"> LEFT COLUMN -->
+            <div class="japan-days">
+                <img src="img/japan_day1.jpeg" alt="Japan Day 1">
+                <div class="japan-days-text">
+                    <h3>Day 1</h3>
+                    <p>Today was mostly spent traveling. After
+                        landing at 3pm, my dance team and I took
+                        a bus to the hotel, checked in, and unpacked.
+                        We made a few nearby 7/11 runs, and later
+                        I met up with my family for dinner.
+                    </p>
+                </div>
+            </div>
+
+            <div class="japan-days">
+                <img src="img/japan_day2.jpeg" alt="Japan Day 2">
+                <div class="japan-days-text">
+                    <h3>Day 2</h3>
+                    <p> Today my dance team had a group outing. We wore matching
+                        shirts and toured Tokyo, stopping at Kokyo Gaien Garden,
+                        Senso-ji Temple, and Tokyo Tower in Shibakoen.
+                        After the tour, I had dinner with my family and
+                        stayed at their hotel.
+                    </p>
+                </div>
+            </div>
+
+            <div class="japan-days">
+                <img src="img/japan_day3.jpeg" alt="Japan Day 3">
+                <div class="japan-days-text">
+                    <h3>Day 3</h3>
+                    <p> Most of today was spent with family at the
+                        Studio Ghibli Museum. After the museum, we shopped around
+                        Shibuya, then got dinner at the Tsukiji Fish Market.
+                        At night, I went back to the hotel with my dance team.
+                    </p>
+                </div>
+            </div>
+
+            <div class="japan-days">
+                <img src="img/japan_day4.jpeg" alt="Japan Day 4">
+                <div class="japan-days-text">
+                    <h3>Day 4</h3>
+                    <p> Today was our team rehearsal day. We practiced from
+                        10-2pm at a small studio. After rehearsal, I got Kura
+                        Sushi with my friends, then we shopped around Takeshita
+                        Street again. We ended off the night going to a pig cafe,
+                        grabbed dinner, then went back home.
+                    </p>
+                </div>
+            </div>
+
+            <div class="japan-days">
+                <img src="img/japan_day5.jpeg" alt="Japan Day 5">
+                <div class="japan-days-text">
+                    <h3>Day 5</h3>
+                    <p>Today is competition Day 1! The whole team got to
+                        Tokyo Olympic Stadium at around 10am. We did our makeup,
+                        ran some pieces, the competed. After, we went back to our
+                        hotels and I got food from 711 with my friends.
+                    </p>
+                </div>
+            </div>
+
+            <div class="japan-days">
+                <img src="img/japan_day6.jpeg" alt="Japan Day 6">
+                <div class="japan-days-text">
+                    <h3>Day 6</h3>
+                    <p> Today is competition Day 2! Today was very similar to
+                        yesterday. We spent most of our day at the competition.
+                        After competition, I got kebab with my friends for dinner.
+                    </p>
+                </div>
+            </div>
+
+            <div class="japan-days">
+                <img src="img/japan_day7.jpeg" alt="Japan Day 7">
+                <div class="japan-days-text">
+                    <h3>Day 7</h3>
+                    <p> Today is our last day in Japan. Everyone on the team
+                        got a ticket to Tokyo's Disney, so we spent most of our day
+                        there. My family also went as well, so I was with both my
+                        friends and family. After Disney, we grabbed food and packed
+                        to go home tomorrow.
+                    </p>
+                </div>
+            </div>
+
+            <div class="japan-days">
+                <img src="img/japan_day8.jpeg" alt="Japan Day 8">
+                <div class="japan-days-text">
+                    <h3>Day 8</h3>
+                    <p>Going back home today! I made one last stop at 711 to get
+                        their cheap and amazing food. I flew with my team back to
+                        Los Angeles.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COMPETITION CAPTURES -->
+    <div id="competition-gallery">
+        <h2>Competition Captures</h2>
+        <div class="gallery"> <!-- sectionw ith all columns without heading -->
+            <div class="comp-photos">
+                <div class="col1"> <!-- column 1 -->
+                    <img src="img/japan_comp1.jpeg" alt="Japan Photo Gallery Picture 1">
+                </div>
+                <div class="col2"> <!-- column 2 -->
+                    <img src="img/japan_comp2.jpeg" alt="Japan Photo Gallery Picture 2">
+                    <img src="img/japan_comp3.jpeg" alt="Japan Photo Gallery Picture 3">
+                </div>
+                <div class="col3"> <!-- column 3 -->
+                    <img src="img/japan_comp4.jpeg" alt="Japan Photo Gallery Picture 4">
+                </div>
+                <div class="col4"> <!-- column 4 -->
+                    <div>
+                        <img src="img/japan_comp5.jpeg" alt="Japan Photo Gallery Picture 5">
+                    </div>
+                    <div class="col4-photos">
+                        <img src="img/japan_comp6.jpeg" alt="Japan Photo Gallery Picture 6">
+                        <img src="img/japan_comp7.jpeg" alt="Japan Photo Gallery Picture 7">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FREE FUN TIME -->
+    <div id="photo-gallery">
+        <h2>Free Funtime!</h2>
+        <div class="gallery"> <!-- sectionw ith all columns without heading -->
+            <div class="photos">
+                <div class="col2"> <!-- column 2 -->
+                    <img src="img/japan_funtime1.jpeg" alt="Japan Funtime Photo 2">
+                    <img src="img/japan_funtime2.jpeg" alt="Japan Funtime Photo 3">
+                </div>
+                <div class="col1"> <!-- column 1 -->
+                    <img src="img/japan_funtime3.jpeg" alt="Japan Funtime Photo 1">
+                </div>
+                <div class="col4"> <!-- column 4 -->
+                    <div>
+                        <img src="img/japan_funtime4.jpeg" alt="Japan Funtime Photo 5">
+                    </div>
+                    <div class="col4-photos">
+                        <!-- <img src="img/japan_funtime7.jpeg" alt="Japan Funtime Photo 6"> -->
+                        <video controls autoplay muted loop>
+                            <source src="img/japan_video.mp4">
+                        </video>
+                        <img src="img/japan_funtime5.jpeg" alt="Japan Funtime Photo 7">
+                    </div>
+                </div>
+                <div class="col3"> <!-- column 3 -->
+                    <img src="img/japan_funtime6.jpeg" alt="Japan Funtime Photo 4">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- REFLECTIONS & THOUGHTS -->
+    <div id="reflection">
+        <h2>Reflections & Thoughts</h2>
+        <div id="reflection-body">
+            <p>
+                This trip meant so much to me because it's truly a once in a lifetime experience.
+                I can always go back to Japan, but I'll never have to chance to be here with
+                my entire dance team while competing at the Olympics Stadium. Because of that, I think
+                Japan is my favorite travel so far. What I loved most about my trip was just getting
+                to spend time with my friends. It was the first time out the country without my parents,
+                so getting that new experience of going out at night at 2am with my friends for a quick
+                stop at 711 felt so independent and freing despite it being such a "small" moment.
+                I always loved competing; the competitions in Japan are not the same in the US. They have a whole
+                celebration before they announce awards, which is where I got to interact with many different
+                teams despite not knowing each other and the language barrier. It truly felt like a community.
+                What I think can be improved, is once again the weather. I don't think I've sweated more in my
+                life. I also did not plan a lot of the places that I wanted to go, so I think I missed out on a lot
+                of potential restaurants and activities I could've tried my time there. Overall, I
+                think this is such a significant travel in my life and will always be one of my favorite
+                moments.
+            </p>
+        </div>
+        <h3>9/10</h3>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div id="section-5-footer"> <!-- SECTION 5: FOOTER -->
+        <p>Mistie Zheng - Travel Blog</p>
+    </div>
+
+
+
+</body>
+
+</html>

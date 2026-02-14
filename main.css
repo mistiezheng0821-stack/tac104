@@ -1,0 +1,315 @@
+/* GET RID OF PADDING AND SPACING IN BETWEEN SECTIONS */
+
+/* body {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+	font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+/* ------- NAVBAR --------+ */
+#section-1-heading ul {
+	/* background-color: #F18FA9; */
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#section-1-heading li {
+	background-color: #F18FA9;
+	position: relative;
+
+}
+
+#menu {
+	display: flex;
+	/* displays the menus bullet point list next to each other instead of as a list */
+	align-items: flex-start;
+	/* gets rid of the stretching ??? */
+	justify-content: center;
+	/* centers everything relative to page */
+}
+
+
+#section-1-heading li:hover {
+	/* selects navbar lists when we hover */
+	background-color: #FBDADD;
+}
+
+#section-1-heading a {
+	color: #ffeff1;
+	font-size: 30px;
+	text-shadow: 1px 1px 1px black;
+	text-decoration: none;
+	width: 200px;
+	display: block;
+	/* make sure to display block so that it gets rid of inline elements, and width can be used */
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/* padding is applied to EVERY text element */
+	/* i THINK if you do this inside the display: flex, it applies to its entire column, not each line of text */
+}
+
+#menu ul {
+	position: absolute;
+	display: none;
+}
+
+#section-1-heading li:hover>ul {
+	/* when we HOVER lists under navbar, this applies to the ul */
+	display: block;
+}
+
+
+
+#section-1-heading {
+	height: 80px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: #F18FA9;
+	/* navbar color stretches across entire page */
+
+	z-index: 1;
+	/* makes the order of navbar FIRST (on top) */
+}
+
+/* body paragraph colors */
+#section-3 {
+	background-color: #FBDADD;
+}
+
+#section-4 {
+	background-color: #EBB2D5;
+}
+
+/* ------- FOOTER --------+ */
+#section-5-footer {
+	background-color: #F18FA9;
+	padding: 15px;
+	text-align: center;
+	color: #ffeff1;
+	/* text-shadow: 2px 2px 2px black; */
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px black;
+}
+
+
+/* FOR SPECIFIC PAGES (NOT HOMEPAGE) */
+body {
+	margin: 0px;
+}
+
+/* HEADINGS FOR LOCATION SPECIFC PAGES */
+.location-heading {
+	text-align: center;
+	justify-content: center;
+	/* border: 10px solid black; */
+	padding-top: 85px;
+	padding-bottom: 60px;
+	background-image: url(img/banner_china.jpg);
+	background-size: cover;
+	/* color: #d5e3f0; */
+	/* color: #f3e4f5; */
+	color: #ffcbd1;
+	/* color: #f88f8b; */
+	text-shadow: 2.5px 2.5px 2.5px black;
+	font-size: 32px;
+}
+
+#country {
+	font-size: 60px;
+	color: #F18FA9;
+	text-shadow: 2px 2px 2px black;
+}
+
+/* ------- BODY SECTIONS STYLING ------- */
+
+/* ---- 1. ABOUT THIS TRIP */
+#about-trip {
+	background-color: #FBDADD;
+	display: flex;
+}
+
+.about-trip-img {
+	/* this is the picture's CONTAINER */
+	/* background-color: blue; */
+	width: 700px;
+	text-align: right;
+	padding: 15px;
+	padding-right: 20px;
+	justify-content: center;
+
+
+}
+
+.about-trip-img img {
+	/* this is the picture ITSELF */
+	width: 350px;
+	height: 500px;
+	object-fit: cover;
+	overflow: hidden;
+	margin: auto;
+	border: 5px solid plum;
+}
+
+.about-trip-text {
+	/* this is the text's CONTAINER */
+	/* background-color: red; */
+	width: 650px;
+	margin: 20px;
+	margin-left: 40px;
+	align-content: center;
+	text-align: center;
+}
+
+.about-trip-text ul,
+li {
+	/* this is the text ITSELF */
+	list-style-position: inside;
+	font-size: 25px;
+	text-align: left;
+
+}
+
+.about-trip-text h2 {
+	color: plum;
+	text-shadow: 2px 2px 2px black;
+	text-align: center;
+	font-size: 50px;
+}
+
+/* 2. ----- PHOTOS */
+#photo-gallery {
+	background-color: #fbdadd;
+}
+
+#photo-gallery h2 {
+	margin: 0px;
+	padding: 40px;
+	margin: 0px;
+	font-size: 50px;
+	text-align: center;
+	color: #957dbb;
+	text-shadow: 1px 1px 1px black;
+
+
+}
+
+.gallery {
+	/* border: 10px solid black; */
+	width: 1400px;
+	height: 600px;
+	margin: auto;
+}
+
+.photos {
+	display: flex;
+}
+
+.col1 {
+	width: 350px;
+	text-align: center;
+	/* border: #957DBB solid 5px; */
+}
+.col1 img {
+	width:325px;
+	height:490px;
+	object-fit: cover;
+}
+.col2 {
+	width: 325px;
+	/* border: #957DBB solid 5px; */
+	text-align: center;
+}
+.col2 img {
+	width: 300px;
+	height: 230px;
+	object-fit: cover;
+	flex-wrap: wrap;
+}
+.col2 img+img {
+	margin-top: 15px;
+}
+
+.col3 {
+	width: 275px;
+	/* border: #957DBB solid 5px; */
+	text-align: center;
+}
+.col3 img {
+	width: 250px;
+	height: 490px;
+	object-fit: cover;
+}
+
+.col4 {
+	width: 400px;
+	/* border: #957DBB solid 5px; */
+	text-align: center;
+}
+.col4 img {
+	width: 375px;
+	height: 200px;
+	object-fit: cover;
+
+}
+.col4-photos img, video {
+	width: 180px;
+	height: 270px;
+	margin-top: 6px;
+	object-fit: cover;
+	
+}
+
+.photos img, video {
+	/* margin: 5px; */
+	border: 5px #957dbb solid;
+}
+
+/* 3. ----- REFLECTION */
+#reflection {
+	/* entire container */
+	text-align: center;
+	justify-content: center;
+	background-color: #d5e3f0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#reflection-body {
+	width: 1000px;
+	margin: auto;
+}
+
+#reflection h2 {
+	/* heading only */
+	margin: 0px;
+	padding: 20px;
+	margin: 0px;
+	color: #6865aa;
+	font-size: 50px;
+}
+
+#reflection p {
+	/* text only */
+	color: black;
+	font-size: 18px;
+}
+
+#reflection h3 {
+	/* rating only */
+	margin: 0px;
+	padding: 20px;
+	color: #6865aa;
+	font-size: 40px;
+}

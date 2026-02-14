@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- INFO ABOUT WEBSITE -->
+
+<head>
+    <meta charset="UTF-8"> <!-- makes sure all characters display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A blog page of all my travel destinations, currently
+    including countries such as China, Japan, and Europe. For each country traveled to, 
+    I note down where I visited, what activities, and a reflection of what I loved most
+    about my trip.">
+    <title>Mistie's Travel Blog | Homepage</title>
+
+    <link rel="stylesheet" href="main.css"> <!-- links the styling to main.css -->
+    <style>
+        h1 {
+            font-size: 50px;
+            margin: 0px;
+        }
+        h2 {
+            font-size: 40px;
+            margin: 0px;
+        }
+
+        body {
+            margin: 0px;
+        }
+        
+        /* ----- HEADING SECTION ------ */
+        #section-2 { 
+            background-image: url(img/heading.JPG);
+            background-size: cover;
+            background-position: center;
+            /* background-color: lavender; */
+            padding: 200px; 
+            color: pink;
+            text-shadow: 5px 5px 2px black;
+            opacity: 85%;
+            /* height: 450px; */
+        }
+
+        /* ----- ABOUT ME SECTION ----- */
+        #section-3 { 
+            display: flex;
+            /* align-items: center; */
+        }
+
+        #section-3-pic { /* this is the picture's CONTAINER */
+            /* background-color: red; */
+            width: 650px;
+            text-align: right;
+            padding: 15px;
+            padding-right: 20px;
+            justify-content: center;
+            
+
+        }
+
+        #section-3 img { /* this is the picture ITSELF */
+            width: 350px;
+            height: 500px;
+            object-fit: cover;
+            overflow: hidden;
+            margin: auto;
+            border: 5px solid plum;
+        }
+
+        #section-3-text { /* this is the text's CONTAINER */
+            /* background-color: purple; */
+            width: 650px;
+            margin: 20px;
+            margin-left: 40px;
+            align-content: center;
+            text-align: center;
+        }
+
+        #section-3 p { /* this is the text ITSELF */
+            font-size: 21px;
+        }
+        #section-3 h2 {
+            color: plum;
+            text-shadow: 2px 2px 2px black;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        /* ----- TRAVEL SPOTS SECTION ----- */
+        #travel-spots {
+            display: flex;
+            /* background-color: red; */
+            justify-content: center;
+        }
+
+        #section-4 h2 { 
+            font-size: 50px;
+            text-align: center;
+            color: #ffeff1;
+            text-shadow: 2px 2px 2px black;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: 0px;
+
+        }
+
+        #section-4 img {
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            overflow: hidden;
+            margin: 15px; 
+            border: 5px solid #ffeff1;
+            opacity: 90%;
+        }
+
+        #section-4 img:hover {
+            opacity: 100%;
+            border: 5px solid #6865aa;
+
+        }
+
+        a+p {
+            text-align: center;
+            font-size: 35px;
+            visibility: hidden;
+            margin-top: 0px;
+            color: #6865aa;
+            /* text-shadow: 1px 1px 2px black; */
+        }
+
+        a:hover+p {
+            visibility: visible;
+        }
+
+        #section-4 {
+            height: 600px;
+            justify-content: center;
+        }
+
+        #embed {
+            background-color: #6865aa;
+            padding-top: 40px;
+            padding-bottom:40px;
+            text-align: center;
+        }
+
+        #embed h2 {
+            font-size: 50px;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        #embed iframe {
+            width: 800px;
+            height: 400px;
+            margin-top:40px;
+            border: white solid 10px;
+        }
+
+        #embed a {
+            font-size: 30px;
+            color: white;
+        }
+        #embed a:hover {
+            color: #fbdadd;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="section-1-heading"> <!-- SECTION 1: DROPDOWN -->
+        <ul id="menu">
+            <li><a href="final_project_homepage_draft.html">Home</a></li>
+            <li><a href="#section-3">About</a></li>
+            <li>
+                <a>Travel</a>
+                <ul id="sub-menu">
+                    <li><a href="europe_page.html">Europe</a></li>
+                    <li><a href="china_page.html">China</a></li>
+                    <li><a href="japan_page.html">Japan</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+    </div>
+
+    <div id="section-2"> <!-- SECTION 2: HEADING -->
+        <h1>Mistie's Travel Blog</h1>
+        <h2>a diary of my travels</h2>
+    </div>
+
+    <div id="section-3"> <!-- SECTION 3: ABOUT ME -->
+        <div id="section-3-pic">
+            <img src="img/about_me.jpeg" alt="Picture of Mistie!">
+        </div>
+        <div id="section-3-text">
+            <h2>About Me</h2>
+            <p>Hello! My name is Mistie. I am a current junior at USC 
+            studying Accounting & Finance. In my free time, I love to
+            dance, journal, and explore new places; one of that being 
+            traveling and visiting different countries! 
+            This page is dedicated to my travel destinations. I will
+            be documenting the things I did, highlights of the trip, and 
+            an overall reflection of how it went. I hope to explore more 
+            countries and cultures as my life goes on! 
+            </p>
+        </div>
+    </div>
+
+    <div id="section-4"> <!-- SECTION 4: TRAVEL SPOTS -->
+        <h2>Travel Spots</h2>
+        <div id="travel-spots"> <!-- use flex box to make image gallery -->
+            <div>
+                <a href="europe_page.html" target="_blank">
+                    <img src="img/europe.jpg" alt="Europe">
+                </a>
+                <p>Europe</p>
+            </div>
+            <div>
+                <a href="japan_page.html" target="_blank">
+                    <img src="img/japan.jpeg" alt="Japan">
+                </a> 
+                 <p>Japan</p>
+            </div>
+            
+            <div>
+                <a href="china_page.html" target="_blank">
+                    <img src="img/china.JPG" alt="China">
+                </a>
+                <p>China</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="embed">
+        <h2>Latest Travel Page</h2>
+        <iframe src="china_page.html" name="China Trip"></iframe>
+        <p></p>
+        <a href="china_page.html">Click Here to View Full Page</a>
+    </div>
+
+    <div id="section-5-footer"> <!-- SECTION 5: FOOTER -->
+        <p>Mistie Zheng - Travel Blog</p>
+    </div>
+</body>
+
+</html>
